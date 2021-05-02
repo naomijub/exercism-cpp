@@ -59,7 +59,6 @@ TEST_CASE("word_with_duplicated_character_in_mixed_case")
     REQUIRE(expected == actual);
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("word_with_duplicated_character_in_mixed_case_lowercase_first")
 {
     const bool actual = isogram::is_isogram("alphAbet");
@@ -69,6 +68,7 @@ TEST_CASE("word_with_duplicated_character_in_mixed_case_lowercase_first")
     REQUIRE(expected == actual);
 }
 
+#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("hypothetical_isogrammic_word_with_hyphen")
 {
     const bool actual = isogram::is_isogram("thumbscrew-japingly");
