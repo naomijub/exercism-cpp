@@ -6,6 +6,6 @@ namespace hamming {
         if (a == b) {
             return 0;
         }
-        return 1;
+        return a.size();
     }
 }  // namespace hamming
