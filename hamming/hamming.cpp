@@ -3,7 +3,9 @@
 
 namespace hamming {
     int compute(const std::string& a, const std::string& b) {
-        (void)a; (void)b;
-        return 0;
+        if (a == b) {
+            return 0;
+        }
+        return 1;
     }
 }  // namespace hamming
