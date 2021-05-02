@@ -14,7 +14,6 @@ TEST_CASE("empty_string")
     REQUIRE(expected == actual);
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("isogram_with_only_lower_case_characters")
 {
     const bool actual = isogram::is_isogram("isogram");
@@ -33,6 +32,7 @@ TEST_CASE("word_with_one_duplicated_character")
     REQUIRE(expected == actual);
 }
 
+#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("word_with_one_duplicated_character_from_the_end_of_the_alphabet")
 {
     const bool actual = isogram::is_isogram("zzyzx");
