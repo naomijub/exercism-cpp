@@ -95,7 +95,6 @@ TEST_CASE("isogram_with_duplicated_hyphen")
     REQUIRE(expected == actual);
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("made_up_name_that_is_an_isogram")
 {
     const bool actual = isogram::is_isogram("Emily Jung Schwartzkopf");
@@ -122,5 +121,3 @@ TEST_CASE("same_first_and_last_characters")
 
     REQUIRE(expected == actual);
 }
-
-#endif
