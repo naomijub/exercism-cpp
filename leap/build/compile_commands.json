@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/Users/julianaomiboeira/Exercism/cpp/leap/build",
+  "command": "/usr/bin/clang++   -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -Wall -Wextra -Wpedantic -Werror -std=c++14 -o CMakeFiles/leap.dir/leap_test.cpp.o -c /Users/julianaomiboeira/Exercism/cpp/leap/leap_test.cpp",
+  "file": "/Users/julianaomiboeira/Exercism/cpp/leap/leap_test.cpp"
+},
+{
+  "directory": "/Users/julianaomiboeira/Exercism/cpp/leap/build",
+  "command": "/usr/bin/clang++   -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -Wall -Wextra -Wpedantic -Werror -std=c++14 -o CMakeFiles/leap.dir/leap.cpp.o -c /Users/julianaomiboeira/Exercism/cpp/leap/leap.cpp",
+  "file": "/Users/julianaomiboeira/Exercism/cpp/leap/leap.cpp"
+},
+{
+  "directory": "/Users/julianaomiboeira/Exercism/cpp/leap/build",
+  "command": "/usr/bin/clang++   -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -Wall -Wextra -Wpedantic -Werror -std=c++14 -o CMakeFiles/leap.dir/test/tests-main.cpp.o -c /Users/julianaomiboeira/Exercism/cpp/leap/test/tests-main.cpp",
+  "file": "/Users/julianaomiboeira/Exercism/cpp/leap/test/tests-main.cpp"
+}
+]
