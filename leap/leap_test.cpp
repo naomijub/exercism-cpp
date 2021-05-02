@@ -21,7 +21,6 @@ TEST_CASE("divisible_by_100_not_divisible_by_400")
     REQUIRE_FALSE(leap::is_leap_year(2100));
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("divisible_by_400")
 {
     REQUIRE(leap::is_leap_year(2000));
@@ -31,4 +30,3 @@ TEST_CASE("divisible_by_200_not_divisible_by_400")
 {
     REQUIRE(!leap::is_leap_year(1800));
 }
-#endif
