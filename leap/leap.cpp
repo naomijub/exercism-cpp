@@ -3,6 +3,6 @@
 namespace leap {
     bool is_leap_year (unsigned int year) {
         (void)year;
-        return false;
+        return year % 4 == 0;
     }
 }  // namespace leap
