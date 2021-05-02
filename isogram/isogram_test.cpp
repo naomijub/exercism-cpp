@@ -68,7 +68,6 @@ TEST_CASE("word_with_duplicated_character_in_mixed_case_lowercase_first")
     REQUIRE(expected == actual);
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("hypothetical_isogrammic_word_with_hyphen")
 {
     const bool actual = isogram::is_isogram("thumbscrew-japingly");
@@ -96,6 +95,7 @@ TEST_CASE("isogram_with_duplicated_hyphen")
     REQUIRE(expected == actual);
 }
 
+#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("made_up_name_that_is_an_isogram")
 {
     const bool actual = isogram::is_isogram("Emily Jung Schwartzkopf");

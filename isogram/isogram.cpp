@@ -5,7 +5,12 @@
 
 namespace isogram {
     bool is_isogram(std::string word) {
-        std::transform(word.begin(), word.end(), word.begin(), ::tolower);
-        return std::unordered_set<char>(word.begin(), word.end()).size() == word.size();
+        std::string _word;
+        for (auto c : word) {
+            if (std::isalpha(c) != 0) _word += c;
+        } // replace by remove_if
+        std::transform(_word.begin(), _word.end(), _word.begin(), ::tolower);
+
+        return std::unordered_set<char>(_word.begin(), _word.end()).size() == _word.size();
     }
 }  // namespace isogram
