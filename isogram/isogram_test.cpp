@@ -32,7 +32,6 @@ TEST_CASE("word_with_one_duplicated_character")
     REQUIRE(expected == actual);
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("word_with_one_duplicated_character_from_the_end_of_the_alphabet")
 {
     const bool actual = isogram::is_isogram("zzyzx");
@@ -60,6 +59,7 @@ TEST_CASE("word_with_duplicated_character_in_mixed_case")
     REQUIRE(expected == actual);
 }
 
+#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("word_with_duplicated_character_in_mixed_case_lowercase_first")
 {
     const bool actual = isogram::is_isogram("alphAbet");
