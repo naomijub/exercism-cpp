@@ -17,12 +17,12 @@ TEST_CASE("complete_hamming_distance_for_small_strand")
     REQUIRE(2 == hamming::compute("AG", "CT"));
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("small_hamming_distance")
 {
     REQUIRE(1 == hamming::compute("AT", "CT"));
 }
 
+#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("small_hamming_distance_in_longer_strand")
 {
     REQUIRE(1 == hamming::compute("GGACG", "GGTCG"));

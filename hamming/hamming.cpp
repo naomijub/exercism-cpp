@@ -6,6 +6,10 @@ namespace hamming {
         if (a == b) {
             return 0;
         }
-        return a.size();
+        unsigned int hamming = 0;
+        for (unsigned long i = 0; i < a.size(); i++) {
+            if (a[i] != b[i]) hamming++;
+        }
+        return hamming;
     }
 }  // namespace hamming
