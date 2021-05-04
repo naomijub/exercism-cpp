@@ -4,8 +4,9 @@
 #include <algorithm>
 
 namespace anagram {
-    anagram::anagram(const std::string word) : word_(word)
+    anagram::anagram(const std::string word)
     {
+        std::transform(word.begin(), word.end(), std::back_inserter(word_), ::tolower);
     }
     
     anagram::~anagram()

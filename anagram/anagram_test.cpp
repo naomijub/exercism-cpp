@@ -68,7 +68,6 @@ TEST_CASE("detects_multiple_anagrams_with_different_case")
     REQUIRE(expected == matches);
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("does_not_detect_non_anagrams_with_identical_checksum")
 {
     auto subject = anagram::anagram("mass");
@@ -87,6 +86,7 @@ TEST_CASE("detects_anagrams_case_insensitively")
     REQUIRE(expected == matches);
 }
 
+#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("detects_anagrams_using_case_insensitive_subject")
 {
     auto subject = anagram::anagram("Orchestra");
