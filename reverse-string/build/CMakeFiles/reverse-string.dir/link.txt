@@ -1,1 +1,0 @@
-/usr/bin/clang++ -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/reverse-string.dir/reverse_string_test.cpp.o CMakeFiles/reverse-string.dir/reverse_string.cpp.o CMakeFiles/reverse-string.dir/test/tests-main.cpp.o -o reverse-string 
