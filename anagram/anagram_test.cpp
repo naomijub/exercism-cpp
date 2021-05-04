@@ -33,7 +33,6 @@ TEST_CASE("does_not_detect_anagram_subsets")
     REQUIRE(expected == matches);
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("detects_anagram")
 {
     auto subject = anagram::anagram("listen");
@@ -59,6 +58,7 @@ TEST_CASE("detects_three_anagrams")
     REQUIRE(expected == matches);
 }
 
+
 TEST_CASE("detects_multiple_anagrams_with_different_case")
 {
     auto subject = anagram::anagram("nose");
@@ -68,6 +68,7 @@ TEST_CASE("detects_multiple_anagrams_with_different_case")
     REQUIRE(expected == matches);
 }
 
+#if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("does_not_detect_non_anagrams_with_identical_checksum")
 {
     auto subject = anagram::anagram("mass");
