@@ -25,7 +25,8 @@ namespace anagram {
     }
 
     bool anagram::is_anagram(std::string candidate) {
-        if (this->word_.size() != candidate.size()) return false;
+        if (this->word_.size() != candidate.size() 
+            || this->word_ == candidate) return false;
 
         return std::is_permutation(word_.begin(), word_.end(), candidate.begin());
     }
